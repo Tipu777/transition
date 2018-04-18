@@ -15,7 +15,6 @@ body {
 .clock.simple:after {
   background: black;
   border-radius: 50%;
-  content: "";
   position: absolute;
   left: 50%;
   top: 50%;
@@ -34,7 +33,7 @@ body {
 }
 
 .hours {
-  background: black;
+  background: green;
   height: 20%;
   left: 48.75%;
   position: absolute;
@@ -51,4 +50,15 @@ body {
   top: 10%;
   transform-origin: 50% 100%;
   width: 2%;
+}
+
+.seconds {
+  background: red;
+  height: 40%;
+  left: 49%;
+  position: absolute;
+  top: 10%;
+  transform-origin: 50% 100%;
+  width: 1%;
+  z-index: 8;
 }
