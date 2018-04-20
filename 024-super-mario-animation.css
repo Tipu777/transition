@@ -1,6 +1,6 @@
 * { box-sizing: border-box;}
 body {
-  background: black;
+  background: white;
 }
 
 .ground {
@@ -24,8 +24,16 @@ body {
   animation: slide-left 5s steps(1000) infinite forwards, down-up 10s steps(1000) infinite forwards;
 }
 
+.mario {
+  animation: mario-walk 2s steps(5) infinite forwards, mario-move 10s steps(1000) infinite forwards;
+}
 
-
+@keyframes mario-walk {
+  100% { background-position: -125px 0px; }
+}
+@keyframes mario-move {
+  100% {  margin-left: 100vw; }
+}
 @keyframes move {
   100% { background-position: -1680px 0px; }
 }
@@ -55,7 +63,7 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 5px;
-  background-color: skyblue;
+  background-color: black;
   margin: 0 auto;
 }
 
@@ -68,13 +76,15 @@ body {
   left: 0;
 }
 
-.enemy {
-  background-image: url("boo.png");
-  width: 80px;
-  height: 80px;
+.mario {
+  background-image: url("mario.png");
+  width: 25px;
+  height: 34px;
+  bottom:169px;
+  left:30px;
   position: absolute;
-  bottom: 113px;
-  margin-left: -100px;
+  transform: scale(4);
+  /*margin-left: -100px; */
 }
 
 .small-cloud {
