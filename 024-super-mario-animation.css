@@ -25,11 +25,11 @@ body {
 }
 
 .mario {
-  animation: mario-walk 2s steps(5) infinite forwards, mario-move 10s steps(1000) infinite forwards;
+  animation: mario-walk 1s steps(4) infinite forwards, mario-move 10s steps(1000) infinite forwards;
 }
 
 @keyframes mario-walk {
-  100% { background-position: -125px 0px; }
+  100% { background-position: -305px 0px; }
 }
 @keyframes mario-move {
   100% {  margin-left: 100vw; }
@@ -52,7 +52,7 @@ body {
 }
 
 @keyframes down-up {
-  50% { margin-top: 200px;}
+  50% { margin-top: 154px;}
   100% { margin-top: 0px; }
 }
 
@@ -77,13 +77,12 @@ body {
 }
 
 .mario {
-  background-image: url("mario.png");
-  width: 25px;
-  height: 34px;
-  bottom:169px;
+  background-image: url("mariosprite.png");
+  width: 76.25px;
+  height: 131px;
+  bottom:107px;
   left:30px;
   position: absolute;
-  transform: scale(4);
   /*margin-left: -100px; */
 }
 
@@ -95,4 +94,13 @@ body {
   right: 0;
   position: absolute;
   margin-right: -180px;
+}
+
+.enemy {
+  background-image: url("enemy.png");
+  width: 70px;
+  height: 176px;
+  position: absolute;
+  bottom: 113px;
+  margin-left: -176px;
 }
